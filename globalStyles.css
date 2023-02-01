@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+/* setup */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  /* colors */
+  --clr-primary: #000;
+  --clr-secondary: #fff;
+  --clr-grey: #e7ecef;
+
+  /* font */
+  --ff-primary: "Roboto", sans-serif;
+
+  /* transition */
+  --transition: all 300ms ease;
+
+  /* shadow */
+  --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+}
+
+main {
+  margin: 120px auto 0 auto;
+  width: 80vw;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  display: inline-block;
+}
+
+/* RESPONSIVE */
+/* laptop */
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 132px auto 0 auto;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 100px auto 0 auto;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  main {
+    margin: 111px auto 0 auto;
+  }
+}
