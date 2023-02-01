@@ -1,6 +1,6 @@
 // select items
 const hamburger = document.querySelector(".hamburger");
-const navItems = document.querySelector(".nav-items");
+const navContainer = document.querySelector(".nav-container");
 const links = document.querySelectorAll(".nav-link");
 
 // toogle haburger menu and mobile nav items
@@ -8,13 +8,14 @@ hamburger.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   hamburger.classList.toggle("active");
-  navItems.classList.toggle("active");
+  navContainer.classList.toggle("active");
 }
 
 //click on each link close mobile nav
 let menuMobile = false;
 links.forEach(function (link) {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (e) {
+    e.stopPropagation();
     if (menuMobile) {
       hamburger.classList.add("active");
       menuMobile = true;
@@ -22,6 +23,6 @@ links.forEach(function (link) {
       hamburger.classList.remove("active");
       menuMobile = false;
     }
-    navItems.classList.remove("active");
+    navContainer.classList.remove("active");
   });
 });

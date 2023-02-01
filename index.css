@@ -4,7 +4,7 @@
 2. Hero section
 */
 
-/**** NAVIGATION BAR ****/
+/**** 1. NAVIGATION BAR ****/
 #header {
   position: fixed;
   top: 0;
@@ -37,12 +37,6 @@
   display: none;
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -51,6 +45,12 @@
   padding: 2rem 0;
   width: 80vw;
   margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
 .logo {
@@ -115,7 +115,7 @@
 }
 /**** END OF NAVIGATION BAR ****/
 
-/**** HERO SECTION ****/
+/**** 2. HERO SECTION ****/
 .hero-section {
   width: 100%;
   display: grid;
@@ -132,6 +132,11 @@
   object-fit: fill;
 }
 
+.hero-video {
+  position: relative;
+  z-index: -1;
+}
+
 .hero-item-1 {
   grid-column: 1/5;
   grid-row: 1/4;
@@ -146,6 +151,7 @@
   grid-column: 7/9;
   grid-row: 1/4;
 }
+/**** END OF HERO SECTION ****/
 
 /* RESPONSIVE */
 /* laptop */
@@ -169,28 +175,47 @@
     align-self: flex-start;
   }
   /**** END NAVIGATION BAR ****/
+
+  /**** HERO SECTION ****/
+  .hero-section {
+    padding: 5rem 0;
+  }
+  /**** END OF HERO SECTION ****/
 }
 
 /* tablet */
 @media screen and (max-width: 768px) {
   /**** NAVIGATION BAR ****/
-  .nav-items {
+  .nav-container {
     display: none;
   }
 
-  .nav-items.active {
+  .logo.logo-mobile {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-container.active {
     position: absolute;
     left: 0;
     top: 100px;
     display: block;
     background: var(--clr-secondary);
-    z-index: 3;
+    z-index: 999;
     width: 100%;
     min-height: 100vh;
     padding-left: 10vw;
   }
-  .nav-items.active .nav-item {
-    margin-block: 2.5rem;
+  .nav-container.active .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .nav-container.active .nav-item {
+    margin-block-start: 2rem;
   }
 
   .cart-btn {
@@ -211,12 +236,31 @@
     transform: translateY(-8px) rotate(-45deg);
   }
   /**** END NAVIGATION BAR ****/
+
+  /**** HERO SECTION ****/
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-item {
+    height: 400px;
+  }
+
+  .hero-item-1 {
+    width: 100%;
+  }
+  .hero-item-2,
+  .hero-item-3 {
+    width: 280px;
+  }
+  /**** END OF HERO SECTION ****/
 }
 
 /* mobile */
 @media screen and (max-width: 600px) {
   /**** NAVIGATION BAR ****/
-
   .offer {
     display: none;
   }
@@ -226,11 +270,20 @@
     min-width: 200px;
   }
 
-  .nav-items.active {
+  .navbar {
+    width: 90vw;
+  }
+
+  .nav-container.active {
     top: 111px;
   }
   /**** END NAVIGATION BAR ****/
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
+  /**** HERO SECTION ****/
+  .hero-item-1 {
+    width: 280px;
+  }
+  /**** END OF HERO SECTION ****/
 }

@@ -78,5 +78,6 @@ a {
 @media screen and (max-width: 600px) {
   main {
     margin: 111px auto 0 auto;
+    width: 90vw;
   }
 }
