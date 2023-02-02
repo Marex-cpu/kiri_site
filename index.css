@@ -5,7 +5,9 @@
 3. Structure section
 4. Dessert section
 5. Orasnice section
-6. Sunflower section 
+6. Sunflower section
+7. Oil plum section
+8. Oil walnut section 
 */
 
 /**** 1. NAVIGATION BAR ****/
@@ -333,6 +335,53 @@
 }
 /**** END OF SUNFLOWER SECTION ****/
 
+/**** 7. OIL PLUM SECTION, 
+      8. OIL WALUNT SECTION ****/
+.oil-plum-section,
+.oil-walnut-section {
+  padding-top: 11.5rem;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+.plum-info,
+.walunt-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  width: 50%;
+}
+.plum-info .heading,
+.walunt-info .heading {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.plum-info .desc,
+.walunt-info .desc {
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+.oil-plum-section .plum,
+.oil-walnut-section .walunt {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.oil-plum-section .plum img,
+.oil-walnut-section .walunt img {
+  height: 100%;
+  width: 180px;
+}
+/**** END OF 7. OIL PLUM SECTION, 
+      8. OIL WALUNT SECTION      ****/
+
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -396,6 +445,21 @@
     margin-top: 13rem;
   }
   /**** END OF SUNFLOWER SECTION ****/
+
+  /**** 7. OIL PLUM SECTION, 
+        8. OIL WALUNT SECTION ****/
+  .oil-plum-section,
+  .oil-walnut-section {
+    padding-top: 13rem;
+  }
+
+  .plum-info .heading,
+  .walunt-info .heading {
+    font-size: 3.6rem;
+  }
+
+  /**** END OF 7. OIL PLUM SECTION, 
+        8. OIL WALUNT SECTION       ****/
 }
 
 /* tablet */
@@ -582,6 +646,50 @@
     line-height: 2.4rem;
   }
   /**** END OF SUNFLOWER SECTION ****/
+
+  /**** 7. OIL PLUM SECTION, 
+        8. OIL WALUNT SECTION ****/
+  .oil-plum-section,
+  .oil-walnut-section {
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .oil-walnut-section {
+    flex-direction: column-reverse;
+  }
+
+  .plum-info,
+  .walunt-info {
+    padding-top: 0;
+    width: 100%;
+  }
+  .plum-info .heading,
+  .walunt-info .heading {
+    font-size: 3.5rem;
+  }
+
+  .oil-plum-section .plum,
+  .oil-walnut-section .walunt {
+    height: 100%;
+    width: 100%;
+  }
+
+  .oil-plum-section .plum img,
+  .oil-walnut-section .walunt img {
+    height: 100%;
+    width: 150px;
+  }
+
+  .plum-info .desc,
+  .walunt-info .desc {
+    text-align: center;
+    line-height: 2.4rem;
+  }
+  /**** END OF 7. OIL PLUM SECTION, 
+        8. OIL WALUNT SECTION      ****/
 }
 
 /* mobile */
@@ -634,6 +742,13 @@
     margin-top: 11rem;
   }
   /**** END OF SUNFLOWER SECTION ****/
+
+  /****  OIL PLUM SECTION ****/
+  .oil-plum-section,
+  .oil-walnut-section {
+    padding-top: 11rem;
+  }
+  /**** END OF OIL PLUM SECTION ****/
 }
 
 @media screen and (max-width: 425px) {
