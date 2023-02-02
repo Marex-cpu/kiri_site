@@ -4,7 +4,8 @@
 2. Hero section
 3. Structure section
 4. Dessert section
-5. Orasnice section 
+5. Orasnice section
+6. Sunflower section 
 */
 
 /**** 1. NAVIGATION BAR ****/
@@ -278,6 +279,60 @@
 }
 /**** END OF ORASNICE SECTION ****/
 
+/**** 6. SUNFLOWER SECTION ****/
+.sunflower-section {
+  margin-top: 11.5rem;
+  height: 800px;
+  width: 100%;
+  background: #fed91c;
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sunflower-section .sunflower {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.sunflower-section .sunflower img {
+  width: 300px;
+  height: 100%;
+}
+
+.sunflower-section .sunflower-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sunflower-info .heading {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 90%;
+}
+
+.sunflower-info .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-position: inside;
+  /* padding-left: rem; */
+}
+
+.sunflower-info .info li {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+/**** END OF SUNFLOWER SECTION ****/
+
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -335,6 +390,12 @@
     padding-top: 13rem;
   }
   /**** END OF ORASNICE SECTION ****/
+
+  /****  SUNFLOWER SECTION ****/
+  .sunflower-section {
+    margin-top: 13rem;
+  }
+  /**** END OF SUNFLOWER SECTION ****/
 }
 
 /* tablet */
@@ -483,6 +544,44 @@
     text-align: center;
   }
   /**** END OF ORASNICE SECTION ****/
+
+  /****  SUNFLOWER SECTION ****/
+  .sunflower-section {
+    margin-top: 10rem;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .sunflower-section .sunflower {
+    height: 100%;
+    width: 100%;
+  }
+  .sunflower-section .sunflower img {
+    width: 250px;
+    height: 100%;
+  }
+  .sunflower-section .sunflower-info {
+    width: 100%;
+    height: 100%;
+  }
+  .sunflower-info .heading {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .sunflower-info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5rem;
+  }
+
+  .sunflower-info .info li {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  /**** END OF SUNFLOWER SECTION ****/
 }
 
 /* mobile */
@@ -529,6 +628,12 @@
     padding-top: 11rem;
   }
   /**** END OF ORASNICE SECTION ****/
+
+  /****  SUNFLOWER SECTION ****/
+  .sunflower-section {
+    margin-top: 11rem;
+  }
+  /**** END OF SUNFLOWER SECTION ****/
 }
 
 @media screen and (max-width: 425px) {
