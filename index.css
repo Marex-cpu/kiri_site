@@ -3,6 +3,8 @@
 1. Navigation bar 
 2. Hero section
 3. Structure section
+4. Dessert section
+5. Orasnice section 
 */
 
 /**** 1. NAVIGATION BAR ****/
@@ -207,6 +209,75 @@
 }
 /**** END OF STRUCTURE SECTION ****/
 
+/**** 4. DESSERT SECTION ****/
+.dessert-section {
+  padding-top: 11.5rem;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.dessert-section .left-image {
+  width: 20%;
+  height: 100%;
+}
+.dessert-section .left-image img {
+  width: 200px;
+  height: 100%;
+}
+.dessert-section .dessert-info {
+  width: 80%;
+  height: 100%;
+  background: #ffa57a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dessert-section .dessert-info .info {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  text-align: center;
+}
+/**** END OF DESSERT SECTION ****/
+
+/**** 5. ORASNICE SECTION ****/
+.orasnice-section {
+  padding-top: 11.5rem;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+.orasnice-section .orasnice {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.orasnice-section .orasnice img {
+  height: 100%;
+  width: 300px;
+}
+
+.orasnice-info {
+  padding-top: 5rem;
+}
+.orasnice-info .heading {
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.orasnice-info .desc {
+  max-width: 80%;
+  line-height: 2.4rem;
+}
+/**** END OF ORASNICE SECTION ****/
+
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -249,6 +320,21 @@
     margin: 0;
   }
   /**** END OF STRUCTURE SECTION ****/
+
+  /****  DESSERT SECTION ****/
+  .dessert-section {
+    padding-top: 13rem;
+  }
+  .dessert-section .dessert-info {
+    width: 65%;
+  }
+  /**** END OF DESSERT SECTION ****/
+
+  /****  ORASNICE SECTION ****/
+  .orasnice-section {
+    padding-top: 13rem;
+  }
+  /**** END OF ORASNICE SECTION ****/
 }
 
 /* tablet */
@@ -336,6 +422,67 @@
     gap: 0;
   }
   /**** END OF STRUCTURE SECTION ****/
+
+  /****  DESSERT SECTION ****/
+  .dessert-section {
+    padding-top: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+  }
+  .dessert-section .left-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .dessert-section .left-image img {
+    width: 200px;
+  }
+  .dessert-section .dessert-info {
+    width: 100%;
+    padding: 5rem;
+  }
+  .dessert-section .dessert-info .info {
+    font-size: 1.8rem;
+  }
+  /**** END OF DESSERT SECTION ****/
+
+  /****  ORASNICE SECTION ****/
+  .orasnice-section {
+    padding-top: 10rem;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .orasnice-section .orasnice {
+    width: 100%;
+  }
+  .orasnice-section .orasnice img {
+    height: 100%;
+    width: 250px;
+  }
+
+  .orasnice-info {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .orasnice-info .heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .orasnice-info .desc {
+    max-width: 100%;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+  /**** END OF ORASNICE SECTION ****/
 }
 
 /* mobile */
@@ -370,6 +517,18 @@
     padding-top: 11rem;
   }
   /**** END OF STRUCTURE SECTION ****/
+
+  /****  DESSERT SECTION ****/
+  .dessert-section {
+    padding-top: 11rem;
+  }
+  /**** END OF DESSERT SECTION ****/
+
+  /****  ORASNICE SECTION ****/
+  .orasnice-section {
+    padding-top: 11rem;
+  }
+  /**** END OF ORASNICE SECTION ****/
 }
 
 @media screen and (max-width: 425px) {
