@@ -7,7 +7,8 @@
 5. Orasnice section
 6. Sunflower section
 7. Oil plum section
-8. Oil walnut section 
+8. Oil walnut section
+9. Contact section 
 */
 
 /**** 1. NAVIGATION BAR ****/
@@ -382,6 +383,50 @@
 /**** END OF 7. OIL PLUM SECTION, 
       8. OIL WALUNT SECTION      ****/
 
+/**** 9. CONTACT SECTION ****/
+.contact-section {
+  padding-top: 11.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.contact-video {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-video video {
+  position: relative;
+  z-index: -1;
+  width: 450px;
+  height: 100%;
+}
+
+.contact-information {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+.contact-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 5rem;
+}
+.contact-item span {
+  font-size: 2rem;
+}
+/**** END OF CONTACT SECTION ****/
+
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -457,9 +502,31 @@
   .walunt-info .heading {
     font-size: 3.6rem;
   }
-
   /**** END OF 7. OIL PLUM SECTION, 
         8. OIL WALUNT SECTION       ****/
+
+  /**** CONTACT SECTION ****/
+  .contact-section {
+    padding-top: 13rem;
+    gap: 40px;
+  }
+
+  .contact-video {
+    width: 300px;
+  }
+  .contact-video video {
+    width: 300px;
+    height: 100%;
+  }
+
+  .contact-information {
+    width: 350px;
+  }
+
+  .contact-item img {
+    margin-right: 3rem;
+  }
+  /**** END OF CONTACT SECTION ****/
 }
 
 /* tablet */
@@ -690,6 +757,40 @@
   }
   /**** END OF 7. OIL PLUM SECTION, 
         8. OIL WALUNT SECTION      ****/
+
+  /**** CONTACT SECTION ****/
+  .contact-section {
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contact-video {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-video video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-information {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .contact-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+  }
+  .contact-item span {
+    font-size: 1.8rem;
+  }
+  /**** END OF CONTACT SECTION ****/
 }
 
 /* mobile */
@@ -723,6 +824,10 @@
   .structure-section {
     padding-top: 11rem;
   }
+
+  .structure-item {
+    width: 200px;
+  }
   /**** END OF STRUCTURE SECTION ****/
 
   /****  DESSERT SECTION ****/
@@ -749,6 +854,12 @@
     padding-top: 11rem;
   }
   /**** END OF OIL PLUM SECTION ****/
+
+  /**** CONTACT SECTION ****/
+  .contact-section {
+    padding-top: 11rem;
+  }
+  /**** END OF CONTACT SECTION ****/
 }
 
 @media screen and (max-width: 425px) {
