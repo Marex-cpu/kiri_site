@@ -8,7 +8,8 @@
 6. Sunflower section
 7. Oil plum section
 8. Oil walnut section
-9. Contact section 
+9. Contact section
+10. Sponsors section 
 */
 
 /**** 1. NAVIGATION BAR ****/
@@ -399,8 +400,8 @@
   justify-content: center;
 }
 .contact-video video {
-  position: relative;
-  z-index: -1;
+  /* position: relative;
+  z-index: -1; */
   width: 450px;
   height: 100%;
 }
@@ -426,6 +427,46 @@
   font-size: 2rem;
 }
 /**** END OF CONTACT SECTION ****/
+
+/**** 10. SPONSORS SECTION ****/
+.sponsors-section {
+  padding-top: 11.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsors-section .heading {
+  font-size: 4.5rem;
+  text-align: center;
+}
+.sponsors-section .heading span {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.sponsors-section .line {
+  width: 150px;
+  height: 6px;
+  background: var(--clr-primary);
+  margin: 2.5rem 0 8rem 0;
+}
+
+.sponsors-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.sponsor-item {
+  width: 150px;
+}
+.sponsor-item img {
+  width: 150px;
+}
+/**** END OF SPONSORS SECTION ****/
 
 /* RESPONSIVE */
 /* laptop */
@@ -527,6 +568,20 @@
     margin-right: 3rem;
   }
   /**** END OF CONTACT SECTION ****/
+
+  /**** SPONSORS SECTION ****/
+  .sponsors-section {
+    padding-top: 13rem;
+  }
+
+  .sponsors-section .line {
+    margin-bottom: 5rem;
+  }
+
+  .sponsors-container {
+    justify-content: center;
+  }
+  /**** END OF SPONSORS SECTION ****/
 }
 
 /* tablet */
@@ -791,6 +846,15 @@
     font-size: 1.8rem;
   }
   /**** END OF CONTACT SECTION ****/
+
+  /**** SPONSORS SECTION ****/
+  .sponsors-section {
+    padding-top: 10rem;
+  }
+  .sponsors-section .heading {
+    font-size: 3.6rem;
+  }
+  /**** END OF SPONSORS SECTION ****/
 }
 
 /* mobile */
@@ -860,6 +924,12 @@
     padding-top: 11rem;
   }
   /**** END OF CONTACT SECTION ****/
+
+  /**** SPONSORS SECTION ****/
+  .sponsors-section {
+    padding-top: 11rem;
+  }
+  /**** END OF SPONSORS SECTION ****/
 }
 
 @media screen and (max-width: 425px) {
