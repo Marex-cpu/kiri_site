@@ -934,8 +934,14 @@
 
 @media screen and (max-width: 425px) {
   /**** HERO SECTION ****/
-  .hero-item-1 {
-    width: 280px;
+  .hero-item-1,
+  .hero-item-2,
+  .hero-item-3 {
+    width: 100%;
   }
+
+  /* {
+    width: 280px;
+  } */
   /**** END OF HERO SECTION ****/
 }
