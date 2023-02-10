@@ -99,12 +99,20 @@
 }
 
 .cart-btn {
+  display: flex;
   border: none;
   outline: none;
   background: transparent;
   cursor: pointer;
   width: 30px;
   height: 30px;
+  color: var(--clr-primary);
+}
+.cart-btn .cart-amount {
+  align-self: flex-end;
+  font-weight: 600;
+  font-family: var(--ff-secondary);
+  color: #363636;
 }
 
 .hamburger {

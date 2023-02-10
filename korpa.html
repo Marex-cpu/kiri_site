@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>KIRI - Korpa</title>
+    <!-- globalStyle -->
+    <link rel="stylesheet" href="globalStyles.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/korpa.css" />
+    <!-- index style for navigation bar -->
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body id="bodyKorpa">
+    <!-- navigation bar -->
+    <header id="header">
+      <div class="custome-offer">
+        <span class="offer"
+          >Besplatna poštarina na pošiljke preko 3000,00 RSD</span
+        >
+        <span class="offer-mobile"
+          >Besplatna poštarina na pošiljke <br />
+          preko 3000,00 RSD</span
+        >
+      </div>
+      <nav class="navbar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <a href="index.html" class="logo logo-mobile">Kiri</a>
+
+        <div class="nav-container">
+          <a href="index.html" class="logo">Kiri</a>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="korpa.html" class="nav-link active">Korpa</a>
+            </li>
+            <li class="nav-item">
+              <a href="prodavnica.html" class="nav-link">Prodavnica</a>
+            </li>
+          </ul>
+        </div>
+
+        <a id="cart-btn" href="korpa.html" class="cart-btn">
+          <img
+            src="/assets/cart-lines-1-svgrepo-com.svg"
+            alt="cart-icon"
+            width="30"
+          />
+          <span id="cart-amount" class="cart-amount"></span>
+        </a>
+      </nav>
+    </header>
+    <!-- end of navigation bar -->
+
+    <main>
+      <!-- cart section -->
+      <section class="cart-section">
+        <h1 class="cart-heading">Korpa</h1>
+        <div id="cart-empty-label" class="cart-empty-label">
+          <h2 class="title">Vaša korpa je trenutno prazna!</h2>
+          <a class="btn-back" href="prodavnica.html">Povratak u prodavnicu</a>
+        </div>
+        <!-- shop table -->
+        <table id="shop-table" class="shop-table">
+          <thead class="onLargeScreen">
+            <tr>
+              <th class="product-remove"></th>
+              <th class="product-thumbnail"></th>
+              <th class="product-name">Proizvod</th>
+              <th class="product-price">Cena</th>
+              <th class="product-quantity">Količina</th>
+              <th class="product-subtotal">Ukupno</th>
+            </tr>
+          </thead>
+          <tbody id="shoping-cart" class="shoping-cart">
+            <tr class="product">
+              <td class="product-remove">
+                <img
+                  width="25"
+                  src="/assets/indexPage/close-icon.svg"
+                  alt="close-icon"
+                />
+              </td>
+              <td class="product-thumbnail">
+                <img src="/assets/indexPage/dessert-img.webp" alt="desert" />
+              </td>
+              <td class="product-name product-moblie" data-title="Proizvod">
+                Desert od šljive
+              </td>
+              <td class="product-price product-moblie" data-title="Cena">
+                140,00
+              </td>
+              <td class="product-quantity product-moblie" data-title="Količina">
+                <div class="buttons">
+                  <div id="decrement" class="decrement">
+                    <img
+                      width="20"
+                      src="/assets/indexPage/minus-icon.svg"
+                      alt="minus-icon"
+                    />
+                  </div>
+                  <div id="quantity" class="quantity">0</div>
+                  <div id="increment" class="increment">
+                    <img
+                      width="20"
+                      src="/assets/indexPage/plus-icon.svg"
+                      alt="plus-icon"
+                    />
+                  </div>
+                </div>
+              </td>
+              <td class="product-subtotal product-moblie" data-title="Ukupno">
+                140,00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- end of cart section -->
+    </main>
+
+    <!-- scripts -->
+    <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/cart.js"></script>
+  </body>
+</html>

@@ -9,7 +9,7 @@
     <!-- globalStyle -->
     <link rel="stylesheet" href="globalStyles.css" />
     <!-- style -->
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
     <!-- navigation bar -->
@@ -36,7 +36,7 @@
           <a href="index.html" class="logo">Kiri</a>
           <ul class="nav-items">
             <li class="nav-item">
-              <a href="#prodavnica" class="nav-link">Prodavnica</a>
+              <a href="prodavnica.html" class="nav-link">Prodavnica</a>
             </li>
             <li class="nav-item">
               <a href="#sastav" class="nav-link">Sastav</a>
@@ -53,13 +53,14 @@
           </ul>
         </div>
 
-        <button class="cart-btn">
+        <a id="cart-btn" href="korpa.html" class="cart-btn">
           <img
             src="/assets/cart-lines-1-svgrepo-com.svg"
             alt="cart-icon"
             width="30"
           />
-        </button>
+          <span id="cart-amount" class="cart-amount"></span>
+        </a>
       </nav>
     </header>
     <!-- end of navigation bar -->
@@ -293,6 +294,7 @@
     </main>
 
     <!-- scripts -->
-    <script src="navigationBar.js"></script>
+    <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/home.js"></script>
   </body>
 </html>
