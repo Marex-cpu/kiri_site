@@ -76,23 +76,35 @@ Shop
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
+  .shop {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .item {
+    width: 280px;
+    height: 280px;
+  }
+  .item .image {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 /* tablet */
 @media screen and (max-width: 768px) {
   .shop {
-    padding-top: 15rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 11.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
   }
 
   .item {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 20rem;
+    width: 250px;
+    height: 250px;
   }
   .item .image {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -102,7 +114,6 @@ Shop
 
 @media screen and (max-width: 425px) {
   .shop {
-    padding-top: 11.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +123,7 @@ Shop
   .item {
     width: 100%;
     height: 300px;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
   }
   .item:last-child {
     margin-bottom: 11.5rem;

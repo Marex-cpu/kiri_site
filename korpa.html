@@ -66,7 +66,7 @@
           <h2 class="title">Vaša korpa je trenutno prazna!</h2>
           <a class="btn-back" href="prodavnica.html">Povratak u prodavnicu</a>
         </div>
-        <!-- shop table -->
+        <!-- shop table section-->
         <table id="shop-table" class="shop-table">
           <thead class="onLargeScreen">
             <tr>
@@ -78,49 +78,17 @@
               <th class="product-subtotal">Ukupno</th>
             </tr>
           </thead>
-          <tbody id="shoping-cart" class="shoping-cart">
-            <tr class="product">
-              <td class="product-remove">
-                <img
-                  width="25"
-                  src="/assets/indexPage/close-icon.svg"
-                  alt="close-icon"
-                />
-              </td>
-              <td class="product-thumbnail">
-                <img src="/assets/indexPage/dessert-img.webp" alt="desert" />
-              </td>
-              <td class="product-name product-moblie" data-title="Proizvod">
-                Desert od šljive
-              </td>
-              <td class="product-price product-moblie" data-title="Cena">
-                140,00
-              </td>
-              <td class="product-quantity product-moblie" data-title="Količina">
-                <div class="buttons">
-                  <div id="decrement" class="decrement">
-                    <img
-                      width="20"
-                      src="/assets/indexPage/minus-icon.svg"
-                      alt="minus-icon"
-                    />
-                  </div>
-                  <div id="quantity" class="quantity">0</div>
-                  <div id="increment" class="increment">
-                    <img
-                      width="20"
-                      src="/assets/indexPage/plus-icon.svg"
-                      alt="plus-icon"
-                    />
-                  </div>
-                </div>
-              </td>
-              <td class="product-subtotal product-moblie" data-title="Ukupno">
-                140,00
-              </td>
-            </tr>
-          </tbody>
+          <tbody id="shoping-cart" class="shoping-cart"></tbody>
         </table>
+        <!-- total section -->
+        <section id="total-section" class="total-section">
+          <div class="total-container">
+            <h2 class="title">Ukupna vrednost korpe</h2>
+            <div id="cart-totals" class="cart-totals"></div>
+            <a class="payment" href="#formazaplacanje">Nastavi sa plaćanjem</a>
+          </div>
+        </section>
+        <!-- edn of total section -->
       </section>
       <!-- end of cart section -->
     </main>
