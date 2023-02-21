@@ -1,0 +1,74 @@
+/**** CONTENT ****/
+/*
+1. Form  style
+*/
+#checkout {
+  font-family: var(--ff-secondary);
+}
+
+/**** FORM STYLE ****/
+.checkout-heading-payment,
+.checkout-cart-heading {
+  font-weight: 500;
+  font-size: 3.2rem;
+  padding-top: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 15px;
+}
+
+.checkout-form {
+  width: 60vw;
+}
+
+.checkout-cart {
+  width: 40vw;
+}
+
+.checkout-form label {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.checkout-form label #required {
+  margin-bottom: -7px;
+  margin-left: 0.5rem;
+}
+
+.checkout-form input,
+.checkout-form .textarea {
+  width: 100%;
+  padding: 1.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  transition: border 0.3s ease;
+  font-family: var(--ff-secondary);
+  font-size: 1.6rem;
+}
+
+.checkout-form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.checkout-form input:hover,
+.checkout-form input:focus,
+.checkout-form .textarea:hover,
+.checkout-form .textarea:focus {
+  border: 1px solid #aaa;
+}
+
+.fname_lname {
+  display: flex;
+  gap: 15px;
+}
+
+.fname_lname .fname,
+.fname_lname .lname {
+  width: 50%;
+}

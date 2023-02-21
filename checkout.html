@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>KIRI - Provera i plaćanje</title>
+    <!-- globalStyle -->
+    <link rel="stylesheet" href="globalStyles.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <!-- index style for navigation bar -->
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header id="header">
+      <div class="custome-offer">
+        <span class="offer"
+          >Besplatna poštarina na pošiljke preko 3000,00 RSD</span
+        >
+        <span class="offer-mobile"
+          >Besplatna poštarina na pošiljke <br />
+          preko 3000,00 RSD</span
+        >
+      </div>
+      <nav class="navbar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <a href="index.html" class="logo logo-mobile">Kiri</a>
+
+        <div class="nav-container">
+          <a href="index.html" class="logo">Kiri</a>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="korpa.html" class="nav-link">Nazad do korpe</a>
+            </li>
+          </ul>
+        </div>
+
+        <a id="cart-btn" href="korpa.html" class="cart-btn">
+          <img
+            src="/assets/cart-lines-1-svgrepo-com.svg"
+            alt="cart-icon"
+            width="30"
+          />
+          <span id="cart-amount" class="cart-amount"></span>
+        </a>
+      </nav>
+    </header>
+    <!-- end of navigation bar -->
+
+    <main id="checkout">
+      <div class="checkout-container">
+        <!-- form -->
+        <form class="checkout-form" action="">
+          <h2 class="checkout-heading-payment">Detalji za naplatu</h2>
+
+          <div class="fname_lname">
+            <div class="fname">
+              <label for="fname">
+                Ime
+                <abbr id="required" title="obavezno">*</abbr>
+              </label>
+              <input type="text" name="fname" required />
+            </div>
+            <div class="lname">
+              <label for="lname">
+                Prezime
+                <abbr id="required" title="obavezno">*</abbr>
+              </label>
+              <input type="text" name="lname" required />
+            </div>
+          </div>
+
+          <label for="address">
+            Ulica i kućni broj
+            <abbr id="required" title="obavezno">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="address"
+            placeholder="Ulica i kućni broj"
+            required
+          />
+
+          <input
+            style="margin-top: 2rem"
+            type="text"
+            name="apartman-address"
+            placeholder="Apartman, stan, jedinica itd. (nije obavezno)"
+          />
+
+          <label for="city">
+            Grad
+            <abbr id="required" title="obavezno">*</abbr>
+          </label>
+          <input type="text" name="city" required />
+
+          <label for="zipcode">
+            Poštanski broj
+            <abbr id="required" title="obavezno">*</abbr>
+          </label>
+          <input type="number" name="zipcode" required />
+
+          <label for="phone">
+            Telefon
+            <abbr id="required" title="obavezno">*</abbr>
+          </label>
+          <input type="number" name="phone" required />
+
+          <label for="email-address">
+            Adresa e-pošte
+            <abbr id="required" title="obavezno">*</abbr>
+          </label>
+          <input type="email" name="email-address" required />
+
+          <label for="textarea"> Napomena (opciono) </label>
+          <textarea
+            class="textarea"
+            name="textarea"
+            rows="3"
+            placeholder="Napomena o narudžbini, npr. posebne napomene za isporuku."
+          ></textarea>
+        </form>
+
+        <!-- end of form -->
+
+        <div class="checkout-cart">
+          <h2 class="checkout-cart-heading">Vaša narudžbina</h2>
+        </div>
+      </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="/scripts/navigationBar.js"></script>
+  </body>
+</html>
