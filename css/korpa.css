@@ -140,19 +140,34 @@ td {
   font-weight: 600;
 }
 
-.total-container .payment {
+.total-container .payment,
+.total-container .clearAll {
   width: 100%;
-  background: var(--clr-primary);
-  color: var(--clr-secondary);
   text-align: center;
   padding: 1.5rem 3.5rem;
   margin-top: 2rem;
   font-size: 2rem;
   transition: var(--transition);
-  opacity: 0.9;
+  cursor: pointer;
+  border: 2px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
 }
+
 .total-container .payment:hover {
-  opacity: 1;
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+
+.total-container .clearAll {
+  border: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.total-container .clearAll:hover {
+  background: #ff0000;
+  color: var(--clr-secondary);
 }
 /**** END OF TOTAL SECTION****/
 

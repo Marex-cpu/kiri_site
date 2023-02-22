@@ -4,6 +4,7 @@ const shopingCart = document.getElementById("shoping-cart");
 const shopTable = document.getElementById("shop-table");
 const totalPrice = document.getElementById("cart-totals");
 const totalSection = document.getElementById("total-section");
+const clearAllBtn = document.getElementById("clearAllBtn");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -153,3 +154,10 @@ let totalAmount = () => {
   }
 };
 totalAmount();
+
+let removeAllInCart = () => {
+  basket = [];
+  generateCartItems();
+  localStorage.setItem("data", JSON.stringify(basket));
+  location.reload();
+};
