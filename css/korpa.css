@@ -275,7 +275,8 @@ td {
 
 @media screen and (max-width: 375px) {
   /**** TOTAL SECTION****/
-  .total-container .payment {
+  .total-container .payment,
+  .total-container .clearAll {
     font-size: 1.8rem;
   }
   /**** END OF TOTAL SECTION****/
