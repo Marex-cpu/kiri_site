@@ -1,0 +1,263 @@
+/**** CONTENT ****/
+
+#productsBody {
+  background: var(--clr-grey);
+}
+
+/**** PRODUCT SECTION ****/
+.product-section {
+  padding-top: 5rem;
+  width: 100%;
+  height: auto;
+  background: var(--clr-secondary);
+  font-family: var(--ff-secondary);
+}
+
+/* single product */
+.single-product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding-right: 2.5rem;
+}
+
+.image-product {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.image-product img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+  width: 40%;
+}
+
+.summary .title {
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+.summary .details {
+  display: flex;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+.summary .price {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.addToCart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+/* .addToCart .buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons .decrement,
+.increment {
+  cursor: pointer;
+}
+.buttons .quantity {
+  margin-inline: 1rem;
+  align-self: baseline;
+  font-size: 1.8rem;
+} */
+
+.addToCart .btn-add {
+  cursor: pointer;
+  padding: 0.9rem 1.6rem;
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: var(--ff-secondary);
+  border-radius: 5px;
+  transition: var(--transition);
+}
+.addToCart .btn-add:hover {
+  background: #ce679f;
+}
+
+/* commerce tabs */
+.commerce-tabs {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.commerce-tabs .left-informations {
+  width: 50%;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.left-informations .title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.left-informations .informations {
+  margin-top: 1.5rem;
+}
+.left-informations .informations > p {
+  margin-bottom: 1rem;
+}
+
+.commerce-tabs .right-tabel {
+  padding: 2rem;
+  width: 50%;
+}
+
+.right-tabel .table-product-information {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table-product-information tr:nth-child(even) {
+  background: var(--clr-grey);
+}
+.table-product-information td {
+  padding: 0.25em 0.5em;
+  border: 1px solid var(--clr-grey);
+  border-width: 0 0 1px;
+}
+
+/**** END OF PRODUCT SECTION ****/
+
+/* RESPONSIVE */
+/* laptop */
+@media screen and (max-width: 1024px) {
+  /**** PRODUCT SECTION ****/
+  /* single product */
+  .single-product {
+    justify-content: left;
+    gap: 25px;
+  }
+
+  /* commerce tabs */
+  .commerce-tabs {
+    align-items: center;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  /* single product */
+  .single-product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-right: 0;
+  }
+
+  .image-product {
+    width: 100%;
+  }
+  .image-product img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+  }
+
+  .summary {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .summary .title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+  }
+  .summary .details {
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+  }
+  .summary .price {
+    font-size: 2.2rem;
+  }
+
+  .addToCart {
+    margin-top: 1.4rem;
+  }
+
+  /* commerce tabs */
+  .commerce-tabs {
+    flex-direction: column;
+  }
+
+  .commerce-tabs .left-informations {
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .left-informations .title {
+    font-size: 2.2rem;
+  }
+
+  .left-informations .informations {
+    margin-top: 1rem;
+  }
+
+  .commerce-tabs .right-tabel {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  #product {
+    width: 100vw;
+  }
+
+  .product-section {
+    padding-top: 4rem;
+  }
+
+  /* single product */
+  .single-product {
+    justify-content: left;
+    gap: 25px;
+  }
+
+  .image-product img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+  }
+
+  /* commerce tabs */
+  .commerce-tabs {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .commerce-tabs .left-informations {
+    width: 100%;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  .commerce-tabs .right-tabel {
+    padding: 1.5rem;
+  }
+}

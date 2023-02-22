@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>KIRI - Desert od šljive</title>
+    <!-- globalStyle -->
+    <link rel="stylesheet" href="/globalStyles.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/products.css" />
+    <!-- index style for navigation bar -->
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body id="productsBody">
+    <!-- navigation bar -->
+    <header id="header">
+      <div class="custome-offer">
+        <span class="offer"
+          >Besplatna poštarina na pošiljke preko 3000,00 RSD</span
+        >
+        <span class="offer-mobile"
+          >Besplatna poštarina na pošiljke <br />
+          preko 3000,00 RSD</span
+        >
+      </div>
+      <nav class="navbar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <a href="/index.html" class="logo logo-mobile">Kiri</a>
+
+        <div class="nav-container">
+          <a href="/index.html" class="logo">Kiri</a>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="desert-od-šljive.html" class="nav-link active"
+                >Prodavnica > Desert od šljive</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/prodavnica.html" class="nav-link">Prodavnica</a>
+            </li>
+          </ul>
+        </div>
+
+        <a id="cart-btn" href="/korpa.html" class="cart-btn">
+          <img
+            src="/assets/cart-lines-1-svgrepo-com.svg"
+            alt="cart-icon"
+            width="30"
+          />
+          <span id="cart-amount" class="cart-amount"></span>
+        </a>
+      </nav>
+    </header>
+    <!-- end of navigation bar -->
+
+    <main id="product">
+      <!-- product section -->
+      <section class="product-section">
+        <div id="single-product" class="single-product"></div>
+        <div class="commerce-tabs">
+          <div class="left-informations">
+            <h2 class="title">Informacije o proizvodu</h2>
+            <article class="informations">
+              <p>
+                Sastojci: suve šljive 57%, čokoladni preliv (kakao prah, kakao
+                buter, šećer), šećer, konzervans (kalijum sorbat).
+              </p>
+              <p>
+                Biotin doprinosi normalnoj psihološkoj funkciji, normalnom
+                metabolizmu makronutritijenata, normalnom funkcionisanju nervnog
+                sistema, održavanju normalne kose, kože i sluzokože, kao i
+                održavanju normalnog energetskog metabolizma. <br />
+                Na zahtev proizvodjača izvršena je analiza antioksidativne
+                aktivnosti uzorka i ona iznosi 7,5 mM troloksa na 100 g uzorka,
+                odnosno 59,3 DPPH, dok ukupni sadržaj polifenola iznosi 21 mg/kg
+                galne kiseline.
+              </p>
+              <p>
+                Najbolje upotrebiti do: datuma označenog na pakovanju. <br />
+                Čuvati na suvom i hladnom mestu.
+              </p>
+            </article>
+          </div>
+          <div class="right-tabel">
+            <table class="table-product-information">
+              <tbody>
+                <tr>
+                  <td colspan="2" width="389">
+                    <span> Hranjiva vrednost na 100 g proizvoda </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Energija</span>
+                  </td>
+                  <td width="180">1537 kJ / 367 kcal</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Masti</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih zasićene masne kiseline</span>
+                  </td>
+                  <td width="180">
+                    <span>15,3 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>10,3 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Ugljeni hidrati</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih šećeri</span>
+                  </td>
+                  <td width="180">
+                    <span>48,4 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>41,2 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Vlakna</span>
+                  </td>
+                  <td width="180">10,6 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Proteini</span>
+                  </td>
+                  <td width="180">3,7 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>So</span>
+                  </td>
+                  <td width="180">0,01 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Biotin (μg)</span>
+                  </td>
+                  <td width="180">8 μg (16%NRV*)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- end of product section -->
+    </main>
+
+    <!-- scripts -->
+    <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/pojedinačni-proizvod/desertOdSljive.js"></script>
+  </body>
+</html>

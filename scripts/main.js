@@ -7,18 +7,18 @@ console.log(basket);
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
     .map((shopItem) => {
-      let { id, imageSrc, alt, detailTitle, price } = shopItem;
+      let { id, imageSrc, alt, detailTitle, price, linkTo } = shopItem;
       return `<div id="product-id-${id}" class="item">
-                <a class='image' href='#'>
+                <a class='image' href='${linkTo}'>
                     <img
                     src=${imageSrc}
-                    alt=${alt}
+                    alt=${alt} 
                     />
                 </a>  
                 <div class="details">
                     <h2 class="detail-title">${detailTitle}</h2>
                     <h3 class="price">${price},00 din</h3>
-                    <button id='${id}' onclick="addToCart(${id})" href="#shop" class="btn-add">Dodaj u korpu</button>
+                    <button id='${id}' onclick="addToCart(${id})"  class="btn-add">Dodaj u korpu</button>
                 </div>
             </div>`;
     })
