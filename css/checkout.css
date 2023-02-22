@@ -5,6 +5,7 @@
 */
 #checkout {
   font-family: var(--ff-secondary);
+  padding-bottom: 5rem;
 }
 
 /**** FORM STYLE ****/
@@ -74,3 +75,144 @@ input::-webkit-inner-spin-button {
   width: 50%;
 }
 /**** END OF FORM STYLE ****/
+
+/**** CART DETAIL/CHECKOUT ****/
+.product-container {
+  width: 100%;
+  padding: 2rem 2rem 0;
+  background: var(--clr-grey);
+  margin: 2rem 0 3rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 456px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cart-item .product-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 1.5rem;
+}
+
+.cart-item .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cart-item .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.product-info .inner {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.inner .inner-title {
+  text-transform: uppercase;
+}
+
+.order-review {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.order-review tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.order-review tr:last-child {
+  background: var(--clr-grey);
+}
+
+.order-review th {
+  font-weight: 500;
+  text-align: left;
+}
+
+.order-review td {
+  font-weight: 500;
+  text-align: right;
+  margin-left: 1rem;
+}
+
+.place-order-btn {
+  display: inline-block;
+  padding: 1.5rem 3.5rem;
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid var(--clr-primary);
+  width: 100%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.place-order-btn:hover {
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+/**** END OF CART DETAIL/CHECKOUT ****/
+
+/* RESPONSIVE */
+@media screen and (max-width: 1400px) {
+  .checkout-form {
+    width: 50vw;
+  }
+  .checkout-cart {
+    width: 50vw;
+  }
+}
+
+/* laptop */
+@media screen and (max-width: 1024px) {
+  .checkout-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .checkout-form {
+    width: 100%;
+  }
+
+  .checkout-cart {
+    width: 100%;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .checkout-heading-payment,
+  .checkout-cart-heading {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+
+  .checkout-cart-heading {
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
