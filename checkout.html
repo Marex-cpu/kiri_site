@@ -56,11 +56,10 @@
     <!-- end of navigation bar -->
 
     <main id="checkout">
-      <div class="checkout-container">
+      <form class="checkout-container" action="">
         <!-- form -->
-        <form class="checkout-form" action="">
+        <div class="checkout-form">
           <h2 class="checkout-heading-payment">Detalji za naplatu</h2>
-
           <div class="fname_lname">
             <div class="fname">
               <label for="fname">
@@ -127,14 +126,28 @@
             rows="3"
             placeholder="Napomena o narudžbini, npr. posebne napomene za isporuku."
           ></textarea>
-        </form>
-
+        </div>
         <!-- end of form -->
 
+        <!-- cart detail / checkout -->
         <div class="checkout-cart">
           <h2 class="checkout-cart-heading">Vaša narudžbina</h2>
+
+          <div class="product-container">
+            <div class="cart-item">
+              <a href="" class="product-image"></a>
+              <div class="product-info">
+                <div class="inner">
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="product-amount"></span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <!-- end of cart detail / checkout -->
+      </form>
     </main>
 
     <!-- scripts -->

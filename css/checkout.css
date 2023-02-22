@@ -1,6 +1,7 @@
 /**** CONTENT ****/
 /*
 1. Form  style
+2. Cart detail / checkout
 */
 #checkout {
   font-family: var(--ff-secondary);
@@ -18,7 +19,7 @@
 
 .checkout-container {
   display: flex;
-  gap: 15px;
+  gap: 55px;
 }
 
 .checkout-form {
@@ -72,3 +73,4 @@ input::-webkit-inner-spin-button {
 .fname_lname .lname {
   width: 50%;
 }
+/**** END OF FORM STYLE ****/
