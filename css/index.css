@@ -110,7 +110,7 @@
 }
 .cart-btn .cart-amount {
   align-self: flex-end;
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--ff-secondary);
   color: #363636;
 }
@@ -611,9 +611,11 @@
     position: absolute;
     left: 0;
     top: 100px;
+    bottom: 0;
+    right: 0;
     display: block;
     background: var(--clr-secondary);
-    z-index: 999;
+    z-index: 5;
     width: 100%;
     min-height: 100vh;
     padding-left: 10vw;
@@ -883,6 +885,7 @@
 
   .nav-container.active {
     top: 111px;
+    padding-left: 5vw;
   }
   /**** END NAVIGATION BAR ****/
 
