@@ -13,7 +13,7 @@
     <!-- index style for navigation bar -->
     <link rel="stylesheet" href="/css/index.css" />
   </head>
-  <body>
+  <body id="productsBody">
     <!-- navigation bar -->
     <header id="header">
       <div class="custome-offer">
@@ -60,13 +60,86 @@
     </header>
     <!-- end of navigation bar -->
 
-    <main>
-      <!-- shop section -->
-      <section>Desert od šljive i oraha</section>
-      <!-- end of shop section -->
+    <main id="product">
+      <!-- product section -->
+      <section class="product-section">
+        <div id="single-product" class="single-product"></div>
+        <div class="commerce-tabs">
+          <div class="left-informations">
+            <h2 class="title">Informacije o proizvodu</h2>
+            <article class="informations">
+              <p>
+                Sastojci: suva šljiva , orah, šećer, glukozni sirup, invertni
+                šećerni sirup, konzervans (E-202).
+              </p>
+              <p>Proizvod proizveden po proizvođačkoj specifikaciji.</p>
+              <p>
+                Najbolje upotrebiti do: datuma označenog na pakovanju. <br />
+                Čuvati na suvom i hladnom mestu.
+              </p>
+            </article>
+          </div>
+          <div class="right-tabel">
+            <table class="table-product-information">
+              <tbody>
+                <tr>
+                  <td colspan="2" width="389">
+                    <span> Hranjiva vrednost na 100 g proizvoda </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Energija</span>
+                  </td>
+                  <td width="180">1628 kJ / 387 kcal</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Masti</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih zasićene masne kiseline</span>
+                  </td>
+                  <td width="180">
+                    <span>12,4 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>1,4 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Ugljeni hidrati</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih šećeri</span>
+                  </td>
+                  <td width="180">
+                    <span>59,5 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>38,4 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Proteini</span>
+                  </td>
+                  <td width="180">9,3 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>So</span>
+                  </td>
+                  <td width="180">0,44 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- end of product section -->
     </main>
 
     <!-- scripts -->
     <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/pojedinačni-proizvod/desertOdSljiveiOraha.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@
     <!-- index style for navigation bar -->
     <link rel="stylesheet" href="/css/index.css" />
   </head>
-  <body>
+  <body id="productsBody">
     <!-- navigation bar -->
     <header id="header">
       <div class="custome-offer">
@@ -62,13 +62,117 @@
     </header>
     <!-- end of navigation bar -->
 
-    <main>
-      <!-- shop section -->
-      <section>Pločica od semenki suncokreta i livadskog meda</section>
-      <!-- end of shop section -->
+    <main id="product">
+      <!-- product section -->
+      <section class="product-section">
+        <div id="single-product" class="single-product"></div>
+        <div class="commerce-tabs">
+          <div class="left-informations">
+            <h2 class="title">Informacije o proizvodu</h2>
+            <article class="informations">
+              <p>Sastojci: jezgro suncokreta 78.2%, med 31.8%.</p>
+              <p>
+                Mednjak - Desert na bazi jezgra suncokreta zasladjen livadskim
+                medom. Analize vitamina i minerala uzorka ovog proizvoda
+                izvršene su na Hemijskom Fakultetu Univerziteta u Beogradu.
+              </p>
+              <p>
+                Najbolje upotrebiti do: datuma označenog na pakovanju. <br />
+                Čuvati na suvom i hladnom mestu.
+              </p>
+            </article>
+          </div>
+          <div class="right-tabel">
+            <table class="table-product-information">
+              <tbody>
+                <tr>
+                  <td colspan="2" width="389">
+                    <span> Hranjiva vrednost na 100 g proizvoda </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Energija</span>
+                  </td>
+                  <td width="180">2296 kJ / 552 kcal</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Masti</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih zasićene masne kiseline</span>
+                  </td>
+                  <td width="180">
+                    <span>38,9 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>4,4 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Ugljeni hidrati</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih šećeri</span>
+                  </td>
+                  <td width="180">
+                    <span>36,3 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>31,8 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Proteini</span>
+                  </td>
+                  <td width="180">14,1 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>So</span>
+                  </td>
+                  <td width="180">0,2 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Magnezijum</span>
+                  </td>
+                  <td width="180">305,0 g (81,3%NRV*)</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Mangan (mg)</span>
+                  </td>
+                  <td width="180">1,2 (59,5%NRV*)</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Vitamin E (mg)</span>
+                  </td>
+                  <td width="180">21,2 (176,7%NRV*)</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Vitamin B1 (mg)</span>
+                  </td>
+                  <td width="180">0,63 (57,3%NRV*)</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Selen (μg)</span>
+                  </td>
+                  <td width="180">21,6 (39,3%NRV*)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- end of product section -->
     </main>
 
     <!-- scripts -->
     <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/pojedinačni-proizvod/plocica.js"></script>
   </body>
 </html>

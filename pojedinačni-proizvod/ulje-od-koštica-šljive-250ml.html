@@ -13,7 +13,7 @@
     <!-- index style for navigation bar -->
     <link rel="stylesheet" href="/css/index.css" />
   </head>
-  <body>
+  <body id="productsBody">
     <!-- navigation bar -->
     <header id="header">
       <div class="custome-offer">
@@ -62,13 +62,93 @@
     </header>
     <!-- end of navigation bar -->
 
-    <main>
-      <!-- shop section -->
-      <section>Ulje od koštica šljive 250 ml</section>
-      <!-- end of shop section -->
+    <main id="product">
+      <!-- product section -->
+      <section class="product-section">
+        <div id="single-product" class="single-product"></div>
+        <div class="commerce-tabs">
+          <div class="left-informations">
+            <h2 class="title">Informacije o proizvodu</h2>
+            <article class="informations">
+              <p>
+                Proizvod bogat vitaminom E. Unosom ovog ulja u količini od jedne
+                supene kašike (15ml) zadovoljava se 70,5% od preporučenog
+                dnevnog unosa vitamina E.
+              </p>
+              <p>
+                Najbolje upotrebiti do kraja datuma označenog na pakovanju.
+                <br />
+                Čuvati na suvom i hladnom mestu zaštićenom od izvora svetlosti.
+              </p>
+            </article>
+          </div>
+          <div class="right-tabel">
+            <table class="table-product-information">
+              <tbody>
+                <tr>
+                  <td colspan="2" width="389">
+                    <span> Hranjiva vrednost na 100 ml proizvoda </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Energija</span>
+                  </td>
+                  <td width="180">3374 kJ / 821 kcal</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Masti</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih zasićene masne kiseline</span>
+                  </td>
+                  <td width="180">
+                    <span>91,2 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>6,9 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Ugljeni hidrati</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih šećeri</span>
+                  </td>
+                  <td width="180">
+                    <span>&lt0,1 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>&lt0,1 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Proteini</span>
+                  </td>
+                  <td width="180">&lt0,1 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>So</span>
+                  </td>
+                  <td width="180">0,03 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Vitamin E</span>
+                  </td>
+                  <td width="180">56,5 μg (470%NRV*)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- end of product section -->
     </main>
 
     <!-- scripts -->
     <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/pojedinačni-proizvod/uljeOdKosticaSljive250ml.js"></script>
   </body>
 </html>

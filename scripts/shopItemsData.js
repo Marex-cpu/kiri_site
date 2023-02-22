@@ -3,7 +3,7 @@ let shopItemsData = [
     id: "kdafnidas",
     imageSrc: "/assets/indexPage/dessert-img.webp",
     alt: "Desert od šljive",
-    detailTitle: "Desert od šljive 90 grama, izvor biotina I vlakana ",
+    detailTitle: "Desert od šljive 90 grama, izvor biotina I vlakana",
     price: 139.0,
     linkTo: "/pojedinačni-proizvod/desert-od-šljive.html",
   },
