@@ -79,12 +79,16 @@ input::-webkit-inner-spin-button {
 /**** CART DETAIL/CHECKOUT ****/
 .product-container {
   width: 100%;
-  padding: 2rem 2rem 0;
+  padding: 2rem;
   background: var(--clr-grey);
   margin: 2rem 0 3rem;
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 456px;
+}
+
+.product-container > div:last-child {
+  margin-bottom: 0;
 }
 
 .cart-item {
@@ -94,8 +98,8 @@ input::-webkit-inner-spin-button {
 }
 
 .cart-item .product-image {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   margin-right: 1.5rem;
 }
 

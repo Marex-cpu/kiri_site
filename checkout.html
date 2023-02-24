@@ -133,40 +133,24 @@
         <div class="checkout-cart">
           <h2 class="checkout-cart-heading">Vaša narudžbina</h2>
 
-          <div class="product-container">
-            <div class="cart-item">
-              <a href="prodavnica.html" class="product-image">
-                <img
-                  src="/assets/indexPage/dessert-img.webp"
-                  alt="dessert-img"
-                />
-              </a>
-              <div class="product-info">
-                <div class="inner">
-                  <span class="inner-title">Desert od šljive</span>
-                  <span class="inner-quantity">Količina: 1</span>
-                </div>
-                <span class="product-amount">89.00 din</span>
-              </div>
-            </div>
-          </div>
+          <div id="product-container" class="product-container"></div>
 
           <table class="order-review">
             <tbody>
               <tr class="cart-subtotal">
                 <th>Ukupno:</th>
                 <td data-title="Ukupno">
-                  <span>89.00 din</span>
+                  <span id="cart-subtotal"></span>
                 </td>
               </tr>
               <tr class="shiping">
                 <th>Poštarina:</th>
-                <td data-title="Dostava">Isporuka: 350.00 din</td>
+                <td id="shiping" data-title="Dostava">Isporuka: 350.00 din</td>
               </tr>
               <tr class="order-total">
-                <th>Ukupno sa poštarinom:</th>
+                <th id="order-total-">Ukupno:</th>
                 <td>
-                  <span><strong>350 + 89 din</strong> </span>
+                  <span id="total-amount"></span>
                 </td>
               </tr>
             </tbody>
@@ -180,5 +164,7 @@
 
     <!-- scripts -->
     <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/formSubmitet.js"></script>
   </body>
 </html>
