@@ -226,23 +226,23 @@
 .dessert-section {
   padding-top: 11.5rem;
   height: 650px;
-  width: 100%;
+  max-width: 1700px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  margin: 0 auto;
 }
 
 .dessert-section .left-image {
-  width: 20%;
+  width: 50%;
   height: 100%;
 }
 .dessert-section .left-image img {
-  width: 200px;
+  width: 100%;
   height: 100%;
+  object-fit: fill;
 }
 .dessert-section .dessert-info {
-  width: 80%;
+  width: 50%;
   height: 100%;
   background: #ffa57a;
   display: flex;
@@ -398,28 +398,25 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 100px;
 }
 
-.contact-video {
-  width: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-mokup {
+  width: 50%;
 }
-.contact-video video {
-  /* position: relative;
-  z-index: -1; */
-  width: 450px;
+.contact-mokup img {
+  width: 100%;
   height: 100%;
 }
 
 .contact-information {
-  width: 450px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   gap: 60px;
+  background: #ed9cad;
+  padding: 0 2rem 0 8rem;
 }
 
 .contact-item {
@@ -523,8 +520,13 @@
   .dessert-section {
     padding-top: 13rem;
   }
+
+  .dessert-section .left-image img {
+    object-fit: cover;
+  }
+
   .dessert-section .dessert-info {
-    width: 65%;
+    width: 50%;
   }
   /**** END OF DESSERT SECTION ****/
 
@@ -557,23 +559,14 @@
   /**** CONTACT SECTION ****/
   .contact-section {
     padding-top: 13rem;
-    gap: 40px;
-  }
-
-  .contact-video {
-    width: 300px;
-  }
-  .contact-video video {
-    width: 300px;
-    height: 100%;
   }
 
   .contact-information {
-    width: 350px;
+    padding: 2rem 2rem 2rem 5rem;
   }
 
   .contact-item img {
-    margin-right: 3rem;
+    margin-right: 2.5rem;
   }
   /**** END OF CONTACT SECTION ****/
 
@@ -686,7 +679,6 @@
     flex-direction: column;
     justify-content: center;
     height: auto;
-    gap: 20px;
   }
   .dessert-section .left-image {
     display: flex;
@@ -694,7 +686,7 @@
     width: 100%;
   }
   .dessert-section .left-image img {
-    width: 200px;
+    width: 100%;
   }
   .dessert-section .dessert-info {
     width: 100%;
@@ -829,17 +821,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
   }
 
-  .contact-video {
+  .contact-mokup {
     width: 100%;
+    height: 500px;
     align-items: center;
     justify-content: center;
   }
-  .contact-video video {
+  .contact-mokup img {
     width: 100%;
-    height: 100%;
+    height: 500px;
   }
 
   .contact-information {
@@ -934,6 +926,14 @@
   .contact-section {
     padding-top: 11rem;
   }
+
+  .contact-mokup {
+    height: 400px;
+  }
+  .contact-mokup img {
+    width: 100%;
+    height: 400px;
+  }
   /**** END OF CONTACT SECTION ****/
 
   /**** SPONSORS SECTION ****/
@@ -951,8 +951,14 @@
     width: 100%;
   }
 
-  /* {
-    width: 280px;
-  } */
+  /**** CONTACT SECTION ****/
+  .contact-mokup {
+    max-height: 350px;
+  }
+  .contact-mokup img {
+    width: 100%;
+    max-height: 350px;
+  }
+  /**** END OF CONTACT SECTION ****/
   /**** END OF HERO SECTION ****/
 }

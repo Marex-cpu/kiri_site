@@ -3,6 +3,14 @@ const productContainer = document.getElementById("product-container");
 const cartSubtotal = document.getElementById("cart-subtotal");
 const orderTotal = document.getElementById("total-amount");
 const shiping = document.getElementById("shiping");
+//items used for form validation
+const inputFname = document.getElementById("fname");
+const inputLname = document.getElementById("lname");
+const inputAddress = document.getElementById("address");
+const inputCity = document.getElementById("city");
+const inputZipcode = document.getElementById("zipcode");
+const inputPhone = document.getElementById("phone");
+const inputEmailAddress = document.getElementById("email-address");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 let amount = basket
@@ -73,3 +81,5 @@ totalAmountWithOrWithoutShipping = () => {
   }
 };
 totalAmountWithOrWithoutShipping();
+
+//form validation
