@@ -1,0 +1,121 @@
+.description {
+  max-width: 768px;
+  min-height: calc(100vh - 120px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--ff-primary);
+  padding: 2rem 0;
+}
+
+.about-dessert {
+  font-size: 2rem;
+  text-align: center;
+  color: #7a7a7a;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 100%;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  width: 40%;
+}
+
+.left-content li {
+  font-size: 15px;
+  font-weight: lighter;
+  color: var(--clr-primary);
+  line-height: 1.8;
+  text-align: left;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.left-content .one {
+  border-bottom: 2px solid #8c2c8f;
+}
+.left-content .two {
+  border-bottom: 2px solid #d2972d;
+}
+.left-content .three {
+  border-bottom: 2px solid #df3b96;
+}
+.left-content .four {
+  border-bottom: 2px solid #f3ae89;
+}
+.left-content .five {
+  border-bottom: 2px solid #3c53a4;
+}
+.left-content .six {
+  border-bottom: 2px solid #808080;
+}
+.left-content .seven {
+  border-bottom: 2px solid #d2972d;
+}
+.left-content .eight {
+  border-bottom: 2px solid #2f7439;
+}
+.left-content .nine {
+  border-bottom: 2px solid #df3b96;
+}
+.left-content .ten {
+  border: none;
+}
+
+.right-content {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-content img {
+  width: 250px;
+}
+
+/* RESPONSIVE */
+/* laptop */
+@media screen and (max-width: 1024px) {
+  .description {
+    min-height: calc(100vh - 132px);
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .description {
+    min-height: calc(100vh - 100px);
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .right-content img {
+    max-width: 250px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .description {
+    min-height: calc(100vh - 111px);
+  }
+}
