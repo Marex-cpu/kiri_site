@@ -35,7 +35,7 @@ let generateCartItems = () => {
                   <td class="product-remove">
                     <img
                       width="25"
-                      src="/assets/indexPage/close-icon.svg"
+                      src="/assets/close-icon.svg"
                       alt="close-icon"
                       onclick="removeItem(${id})"
                     />
@@ -54,7 +54,7 @@ let generateCartItems = () => {
                       <div onclick="decrement(${id})" id="decrement" class="decrement">
                         <img
                           width="20"
-                          src="/assets/indexPage/minus-icon.svg"
+                          src="/assets/minus-icon.svg"
                           alt="minus-icon"
                         />
                       </div>
@@ -62,7 +62,7 @@ let generateCartItems = () => {
                       <div onclick="increment(${id})" id="increment" class="increment">
                         <img
                           width="20"
-                          src="/assets/indexPage/plus-icon.svg"
+                          src="/assets/plus-icon.svg"
                           alt="plus-icon"
                         />
                       </div>
