@@ -43,7 +43,9 @@
 }
 
 .checkout-form input,
-.checkout-form .textarea {
+.checkout-form .textarea,
+.conclusionInputs input,
+.conclusionInputs textarea {
   width: 100%;
   padding: 1.5rem;
   outline: none;
@@ -53,7 +55,8 @@
   font-size: 1.6rem;
 }
 
-.checkout-form .textarea {
+.checkout-form .textarea,
+.conclusionInputs textarea {
   resize: none;
 }
 
@@ -65,7 +68,10 @@ input::-webkit-inner-spin-button {
 .checkout-form input:hover,
 .checkout-form input:focus,
 .checkout-form .textarea:hover,
-.checkout-form .textarea:focus {
+.checkout-form .textarea:focus .conclusionInputs input:hover,
+.conclusionInputs input:focus,
+.conclusionInputs textarea:hover,
+.conclusionInputs textarea:focus {
   border: 1px solid #aaa;
 }
 
@@ -132,7 +138,7 @@ input::-webkit-inner-spin-button {
 
 .order-review {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .order-review tr {
@@ -156,6 +162,36 @@ input::-webkit-inner-spin-button {
   margin-left: 1rem;
 }
 
+.conclusionInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-bottom: 2rem;
+}
+
+.conclusionInputs label {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+.conclusionInputs label:first-child {
+  margin-top: 0;
+}
+
+.conclusionInputs label #required {
+  margin-bottom: -7px;
+  margin-left: 0.5rem;
+}
+
+.conclusionInputs input {
+  width: 50%;
+}
+.conclusionInputs input:hover,
+.conclusionInputs input:focus {
+  border: 1px solid #aaa;
+}
+
 .place-order-btn {
   display: inline-block;
   padding: 1.5rem 3.5rem;
@@ -173,6 +209,17 @@ input::-webkit-inner-spin-button {
   background: var(--clr-primary);
   color: var(--clr-secondary);
 }
+
+#my-form-status.success {
+  margin-top: 2rem;
+  font-weight: 500;
+  color: green;
+}
+#my-form-status.error {
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #ff0000;
+}
 /**** END OF CART DETAIL/CHECKOUT ****/
 
 /* RESPONSIVE */
@@ -187,6 +234,10 @@ input::-webkit-inner-spin-button {
 
 /* laptop */
 @media screen and (max-width: 1024px) {
+  #checkout {
+    padding: 0 0 3rem;
+  }
+
   .checkout-container {
     flex-direction: column;
     gap: 25px;

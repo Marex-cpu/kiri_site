@@ -5,6 +5,10 @@
 }
 
 /**** PRODUCT SECTION ****/
+#product {
+  padding: 0 5rem;
+}
+
 .product-section {
   padding-top: 5rem;
   width: 100%;
@@ -64,21 +68,6 @@
   gap: 1rem;
   margin-top: 1.6rem;
 }
-
-/* .addToCart .buttons {
-  display: flex;
-  align-items: center;
-}
-
-.buttons .decrement,
-.increment {
-  cursor: pointer;
-}
-.buttons .quantity {
-  margin-inline: 1rem;
-  align-self: baseline;
-  font-size: 1.8rem;
-} */
 
 .addToCart .btn-add {
   cursor: pointer;
@@ -144,6 +133,10 @@
 /* laptop */
 @media screen and (max-width: 1024px) {
   /**** PRODUCT SECTION ****/
+  #product {
+    padding: 0;
+  }
+
   /* single product */
   .single-product {
     justify-content: left;

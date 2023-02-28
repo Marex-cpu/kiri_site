@@ -10,6 +10,10 @@
   background: var(--clr-grey);
 }
 
+#cart {
+  padding: 0 5rem;
+}
+
 .cart-section {
   width: 100%;
   min-height: calc(100vh - 120px);
@@ -176,6 +180,10 @@ td {
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
+  #cart {
+    padding: 0;
+  }
+
   .cart-section {
     min-height: calc(100vh - 132px);
   }

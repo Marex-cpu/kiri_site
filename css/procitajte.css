@@ -1,3 +1,7 @@
+#read {
+  padding: 0 5rem;
+}
+
 .description {
   max-width: 768px;
   min-height: calc(100vh - 120px);
@@ -85,6 +89,10 @@
 /* RESPONSIVE */
 /* laptop */
 @media screen and (max-width: 1024px) {
+  #read {
+    padding: 0;
+  }
+
   .description {
     min-height: calc(100vh - 132px);
   }

@@ -14,6 +14,36 @@
     <link rel="stylesheet" href="/css/checkout.css" />
     <!-- index style for navigation bar -->
     <link rel="stylesheet" href="/css/index.css" />
+    <!-- email.js for Form Submitet -->
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("tXSWcODJAsyv4RO_P");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("form-submitet")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(event);
+            // generate a five digit number for the contact_number variable
+            // this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.send("service_vc52gzu", "template_dje8d2g", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script> -->
   </head>
   <body>
     <!-- navigation bar -->
@@ -59,35 +89,40 @@
     <!-- end of navigation bar -->
 
     <main id="checkout">
-      <form class="checkout-container" action="">
+      <form
+        action="https://formspree.io/f/xpzerwwj"
+        method="post"
+        id="form-submitet"
+        class="checkout-container"
+      >
         <!-- form -->
         <div class="checkout-form">
           <h2 class="checkout-heading-payment">Detalji za naplatu</h2>
           <div class="fname_lname">
             <div class="fname">
-              <label for="fname">
+              <label for="Ime kupca">
                 Ime
                 <abbr id="required" title="obavezno">*</abbr>
               </label>
-              <input id="fname" type="text" name="fname" required />
+              <input id="fname" type="text" name="Ime kupca" required />
             </div>
             <div class="lname">
-              <label for="lname">
+              <label for="Prezime kupca">
                 Prezime
                 <abbr id="required" title="obavezno">*</abbr>
               </label>
-              <input id="lname" type="text" name="lname" required />
+              <input id="lname" type="text" name="Prezime kupca" required />
             </div>
           </div>
 
-          <label for="address">
+          <label for="Ulica i kućni broj">
             Ulica i kućni broj
             <abbr id="required" title="obavezno">*</abbr>
           </label>
           <input
             id="address"
             type="text"
-            name="address"
+            name="Ulica i kućni broj"
             placeholder="Ulica i kućni broj"
             required
           />
@@ -95,43 +130,43 @@
           <input
             style="margin-top: 2rem"
             type="text"
-            name="apartman-address"
+            name="Apartman, stan, jedinica... (ako je uneto)"
             placeholder="Apartman, stan, jedinica itd. (nije obavezno)"
           />
 
-          <label for="city">
+          <label for="Grad">
             Grad
             <abbr id="required" title="obavezno">*</abbr>
           </label>
-          <input id="city" type="text" name="city" required />
+          <input id="city" type="text" name="Grad" required />
 
-          <label for="zipcode">
+          <label for="Poštanski broj">
             Poštanski broj
             <abbr id="required" title="obavezno">*</abbr>
           </label>
-          <input id="zipcode" type="number" name="zipcode" required />
+          <input id="zipcode" type="number" name="Poštanski broj" required />
 
-          <label for="phone">
+          <label for="Telefon">
             Telefon
             <abbr id="required" title="obavezno">*</abbr>
           </label>
-          <input id="phone" type="number" name="phone" required />
+          <input id="phone" type="number" name="Telefon" required />
 
-          <label for="email-address">
+          <label for="Adresa e-pošte">
             Adresa e-pošte
             <abbr id="required" title="obavezno">*</abbr>
           </label>
           <input
             id="email-address"
             type="email"
-            name="email-address"
+            name="Adresa e-pošte"
             required
           />
 
-          <label for="textarea"> Napomena (opciono) </label>
+          <label for="Napomena"> Napomena (opciono) </label>
           <textarea
             class="textarea"
-            name="textarea"
+            name="Napomena (opciono)"
             rows="3"
             placeholder="Napomena o narudžbini, npr. posebne napomene za isporuku."
           ></textarea>
@@ -159,13 +194,39 @@
               <tr class="order-total">
                 <th id="order-total-">Ukupno:</th>
                 <td>
-                  <span id="total-amount"></span>
+                  <span name="total-amount" id="total-amount"></span>
                 </td>
               </tr>
             </tbody>
           </table>
 
+          <!-- conclusion of the order -->
+          <div class="conclusionInputs">
+            <label for="Narudžbina">
+              Potvrdite Vašu narudžbinu (dat primer kako treba napisati, ako ima
+              više proizvoda odvajati ih ;)
+            </label>
+            <textarea
+              class="textarea"
+              name="Narudžbina"
+              rows="2"
+              placeholder="Orasnica - količina 2; Desert od šljive - količina 3"
+              required
+            ></textarea>
+
+            <label for="Ukupan iznos uključujući poštarinu 350 din">
+              Uneti ukupan iznos sa poštarinom
+            </label>
+            <input
+              type="number"
+              name="Ukupan iznos uključujući poštarinu 350 din"
+              required
+              placeholder="1200.00"
+            />
+          </div>
+
           <button type="submit" class="place-order-btn">Naručite</button>
+          <div id="my-form-status"></div>
         </div>
         <!-- end of cart detail / checkout -->
       </form>

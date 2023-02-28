@@ -4,6 +4,10 @@ Shop
 */
 
 /**** SHOP ****/
+#prodavnica {
+  padding: 0;
+}
+
 .shop {
   padding-top: 20rem;
   display: grid;
