@@ -166,7 +166,6 @@ input::-webkit-inner-spin-button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
   margin-bottom: 2rem;
 }
 
@@ -220,6 +219,25 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   color: #ff0000;
 }
+
+#required-fields {
+  padding-top: 1.6rem;
+  width: 100%;
+}
+
+#required-fields p {
+  padding-left: 1rem;
+  padding-block: 0.25rem;
+  color: var(--clr-secondary);
+  font-weight: 600;
+  font-family: var(--ff-secondary);
+  background: var(--clr-primary);
+}
+
+.required-item {
+  display: none;
+}
+
 /**** END OF CART DETAIL/CHECKOUT ****/
 
 /* RESPONSIVE */
