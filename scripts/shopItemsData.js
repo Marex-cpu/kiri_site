@@ -6,7 +6,7 @@ let shopItemsData = [
     detailTitle: "Desert od šljive 90 grama, izvor biotina i vlakana",
     price: 139.0,
     formSubmitetDetail: "Desert od šljive",
-    linkTo: "/pojedinačni-proizvod/desert-od-šljive.html",
+    linkTo: "/proizvod/desert-od-šljive.html",
   },
   {
     id: "tdgfnidas",
@@ -15,7 +15,7 @@ let shopItemsData = [
     detailTitle: "Orasnica 50 grama, izvor vitamina i minerala",
     price: 89.0,
     formSubmitetDetail: "Orasnica",
-    linkTo: "/pojedinačni-proizvod/orasnica.html",
+    linkTo: "/proizvod/orasnica.html",
   },
   {
     id: "gdafsidas",
@@ -25,8 +25,7 @@ let shopItemsData = [
       "Pločica od semenki suncokreta i livadskog meda 50 grama, proizvod sa 10 benefita",
     price: 89.0,
     formSubmitetDetail: "Pločica",
-    linkTo:
-      "/pojedinačni-proizvod/pločica-od-semenki-suncokreta-i-livadskog-meda.html",
+    linkTo: "/proizvod/pločica-od-semenki-suncokreta-i-livadskog-meda.html",
   },
   {
     id: "jdaffidas",
@@ -35,7 +34,7 @@ let shopItemsData = [
     detailTitle: "Desert od šljive i oraha 50 grama",
     price: 89.0,
     formSubmitetDetail: "Desert od šljive i oraha",
-    linkTo: "/pojedinačni-proizvod/desert-od-šljive-i-oraha.html",
+    linkTo: "/proizvod/desert-od-šljive-i-oraha.html",
   },
   {
     id: "ddafnid00",
@@ -44,7 +43,7 @@ let shopItemsData = [
     detailTitle: "Ulje od koštica šljive 250 ml, izvor vitamina E",
     price: 2000.0,
     formSubmitetDetail: "Ulje od koš. šlj. 250ml",
-    linkTo: "/pojedinačni-proizvod/ulje-od-koštica-šljive-250ml.html",
+    linkTo: "/proizvod/ulje-od-koštica-šljive-250ml.html",
   },
   {
     id: "qddf4idas",
@@ -53,7 +52,7 @@ let shopItemsData = [
     detailTitle: "Ulje od koštica šljive 100 ml, izvor vitamina E",
     price: 800.0,
     formSubmitetDetail: "Ulje od koš. šlj. 100ml",
-    linkTo: "/pojedinačni-proizvod/ulje-od-koštica-šljive-100ml.html",
+    linkTo: "/proizvod/ulje-od-koštica-šljive-100ml.html",
   },
   {
     id: "caafgidas",
@@ -63,7 +62,7 @@ let shopItemsData = [
       "Ulje od oraha 250 ml, izvor vitamina i omega 3 masnih kiselina",
     price: 2000.0,
     formSubmitetDetail: "Ulje od oraha 250ml",
-    linkTo: "/pojedinačni-proizvod/ulje-od-oraha-250ml.html",
+    linkTo: "/proizvod/ulje-od-oraha-250ml.html",
   },
   {
     id: "fdaf6icas",
@@ -73,6 +72,6 @@ let shopItemsData = [
       "Ulje od oraha 100 ml, izvor vitamina i omega 3 masnih kiselina",
     price: 800.0,
     formSubmitetDetail: "Ulje od oraha 100ml",
-    linkTo: "/pojedinačni-proizvod/ulje-od-oraha-100ml.html",
+    linkTo: "/proizvod/ulje-od-oraha-100ml.html",
   },
 ];
