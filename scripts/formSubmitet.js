@@ -87,6 +87,7 @@ var form = document.getElementById("form-submitet");
 
 async function handleSubmit(event) {
   event.preventDefault();
+  var modal = document.getElementById("modal-gratefulness");
   var status = document.getElementById("my-form-status");
   var data = new FormData(event.target);
   fetch(event.target.action, {
@@ -98,8 +99,7 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       if (response.ok) {
-        status.classList.add("success");
-        status.innerHTML = "Porudžbina uspešno poslata!";
+        modal.classList.add("active");
         form.reset();
       } else {
         response.json().then((data) => {
@@ -220,3 +220,9 @@ const generateOrderInputValue = () => {
     .join("");
 };
 generateOrderInputValue();
+
+//close modal
+const closeModal = () => {
+  const modal = document.getElementById("modal-gratefulness");
+  modal.classList.remove("active");
+};

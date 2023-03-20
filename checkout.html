@@ -15,7 +15,7 @@
     <!-- index style for navigation bar -->
     <link rel="stylesheet" href="/css/index.css" />
   </head>
-  <body>
+  <body id="checkoutBody">
     <!-- navigation bar -->
     <header id="header">
       <div class="custome-offer">
@@ -71,7 +71,7 @@
         <p id="requiredTotal" class="required-item"></p>
       </div>
       <form
-        action="https://formspree.io/f/myyajvdw"
+        action="https://formspree.io/f/xpzerwwj"
         method="post"
         id="form-submitet"
         class="checkout-container"
@@ -195,7 +195,8 @@
             ></textarea>
 
             <label for="Ukupan iznos uključujući poštarinu 350 din">
-              Pregled ukupnog iznosa sa poštarinom:
+              Pregled ukupnog iznosa sa poštarinom (plaćanje se izvršava
+              prilikom preuzimanja):
             </label>
             <input
               id="total"
@@ -214,6 +215,22 @@
         <!-- end of cart detail / checkout -->
       </form>
     </main>
+
+    <!-- modal of gratefulness -->
+    <div id="modal-gratefulness">
+      <div class="modal">
+        <h3>Vaša porudžbina je uspešno izvršena!</h3>
+        <p>
+          Hvala na kupovini!<br />
+          Vaša porudžbina se trenutno priprema, obavestićemo Vas kada proizvod/e
+          pošaljemo.
+        </p>
+        <p style="margin-top: 1rem">
+          Plaćanje se obavlja prilikom preuzimanja poručene robe.
+        </p>
+        <button id="modal-close" onclick="closeModal()">Zatvori</button>
+      </div>
+    </div>
 
     <!-- scripts -->
     <script src="/scripts/navigationBar.js"></script>
