@@ -201,16 +201,17 @@ input::-webkit-inner-spin-button {
   font-size: 2rem;
   font-family: var(--ff-secondary);
   font-weight: 500;
-  background: transparent;
+  background: var(--clr-primary);
   border: 2px solid var(--clr-primary);
   width: 100%;
   cursor: pointer;
   transition: var(--transition);
+  color: var(--clr-secondary);
 }
 
 .place-order-btn:hover {
-  background: var(--clr-primary);
-  color: var(--clr-secondary);
+  background: var(--clr-secondary);
+  color: var(--clr-primary);
 }
 
 #my-form-status.success {

@@ -104,8 +104,9 @@
 .left-informations .informations {
   margin-top: 1.5rem;
 }
-.left-informations .informations > p {
+.left-informations .informations p {
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .commerce-tabs .right-tabel {

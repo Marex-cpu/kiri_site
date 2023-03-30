@@ -23,20 +23,20 @@
 }
 
 #main-index {
+  margin-top: 0;
   background: var(--clr-secondary);
 }
 
 /**** 1. NAVIGATION BAR ****/
 #header {
-  position: fixed;
+  position: relative;
   top: 0;
-  left: 7.5vw;
   width: 85vw;
   height: auto;
   display: flex;
   flex-direction: column;
   background: var(--clr-secondary);
-  border-bottom: 4px solid var(--clr-secondary);
+  min-height: 130px;
   z-index: 2;
   margin: 0 auto;
 }
@@ -234,34 +234,34 @@
 .dessert-section {
   padding-top: 11.5rem;
   height: 650px;
-  max-width: 1700px;
+  width: 100%;
   display: flex;
-  align-items: center;
-  margin: 0 auto;
+  gap: 50px;
 }
 
-.dessert-section .left-image {
+.dessert-section .dessert {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
-.dessert-section .left-image img {
-  width: 100%;
+.dessert-section .dessert img {
+  width: 220px;
   height: 100%;
   object-fit: fill;
 }
 .dessert-section .dessert-info {
   width: 50%;
   height: 100%;
-  background: #ffa57a;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .dessert-section .dessert-info .info {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3.6rem;
-  text-align: center;
+  text-align: left;
 }
 /**** END OF DESSERT SECTION ****/
 
@@ -276,7 +276,7 @@
 
 .orasnice-section .orasnice {
   height: 100%;
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: center;
 }
@@ -286,6 +286,7 @@
 }
 
 .orasnice-info {
+  width: 50%;
   padding-top: 5rem;
 }
 .orasnice-info .heading {
@@ -362,6 +363,9 @@
   display: flex;
   gap: 50px;
 }
+.oil-walnut-section {
+  padding: 11.5rem 0;
+}
 
 .plum-info,
 .walunt-info {
@@ -402,10 +406,11 @@
 
 /**** 9. CONTACT SECTION ****/
 .contact-section {
-  padding-top: 11.5rem;
+  /* padding-top: 11.5rem; */
   width: 100%;
   display: flex;
   justify-content: center;
+  background: var(--clr-secondary);
 }
 
 .contact-mokup {
@@ -432,22 +437,24 @@
   align-items: center;
 }
 .contact-item img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   margin-right: 5rem;
 }
 .contact-item span {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 /**** END OF CONTACT SECTION ****/
 
 /**** 10. SPONSORS SECTION ****/
 .sponsors-section {
-  padding-top: 11.5rem;
-  margin-bottom: 5rem;
+  padding: 11.5rem 5rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--clr-secondary);
+  margin: 0 auto;
+  width: 85vw;
 }
 .sponsors-section .heading {
   font-size: 4.5rem;
@@ -481,7 +488,22 @@
 }
 /**** END OF SPONSORS SECTION ****/
 
+/* FOOTER SECION */
+footer {
+  background: var(--clr-primary);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer h2 {
+  color: var(--clr-secondary);
+  letter-spacing: 2px;
+  font-size: 2.6rem;
+}
+
 /* RESPONSIVE */
+
 /* laptop */
 @media screen and (max-width: 1024px) {
   /**** NAVIGATION BAR ****/
@@ -532,10 +554,6 @@
   .dessert-section .left-image img {
     object-fit: cover;
   }
-
-  .dessert-section .dessert-info {
-    width: 50%;
-  }
   /**** END OF DESSERT SECTION ****/
 
   /****  ORASNICE SECTION ****/
@@ -552,9 +570,11 @@
 
   /**** 7. OIL PLUM SECTION, 
         8. OIL WALUNT SECTION ****/
-  .oil-plum-section,
-  .oil-walnut-section {
+  .oil-plum-section {
     padding-top: 13rem;
+  }
+  .oil-walnut-section {
+    padding: 13rem 0;
   }
 
   .plum-info .heading,
@@ -566,7 +586,7 @@
 
   /**** CONTACT SECTION ****/
   .contact-section {
-    padding-top: 13rem;
+    /* padding-top: 13rem; */
   }
 
   .contact-information {
@@ -575,6 +595,11 @@
 
   .contact-item img {
     margin-right: 2.5rem;
+    width: 60px;
+    height: 60px;
+  }
+  .contact-item span {
+    font-size: 2.6rem;
   }
   /**** END OF CONTACT SECTION ****/
 
@@ -693,22 +718,23 @@
     padding-top: 10rem;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: auto;
+    gap: 20px;
   }
-  .dessert-section .left-image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+
   .dessert-section .left-image img {
-    width: 100%;
+    width: 250px;
+    height: 100%;
   }
+
   .dessert-section .dessert-info {
-    width: 100%;
-    padding: 5rem;
+    width: 80%;
   }
+
   .dessert-section .dessert-info .info {
     font-size: 1.8rem;
+    text-align: center;
   }
   /**** END OF DESSERT SECTION ****/
 
@@ -795,6 +821,9 @@
     align-items: center;
     gap: 20px;
   }
+  .oil-walnut-section {
+    padding: 10rem 0;
+  }
 
   .oil-walnut-section {
     flex-direction: column-reverse;
@@ -832,7 +861,7 @@
 
   /**** CONTACT SECTION ****/
   .contact-section {
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -878,7 +907,6 @@
 @media screen and (max-width: 600px) {
   /**** NAVIGATION BAR ****/
   #header {
-    left: 5vw;
     width: 90vw;
   }
 
@@ -939,15 +967,17 @@
   /**** END OF SUNFLOWER SECTION ****/
 
   /****  OIL PLUM SECTION ****/
-  .oil-plum-section,
-  .oil-walnut-section {
+  .oil-plum-section {
     padding-top: 11rem;
+  }
+  .oil-walnut-section {
+    padding: 11rem 0;
   }
   /**** END OF OIL PLUM SECTION ****/
 
   /**** CONTACT SECTION ****/
   .contact-section {
-    padding-top: 11rem;
+    /* padding-top: 11rem; */
   }
 
   .contact-mokup {
@@ -992,6 +1022,19 @@
     max-height: 350px;
   }
   /**** END OF CONTACT SECTION ****/
+}
+
+@media screen and (max-width: 365px) {
+  #index {
+    background: none;
+  }
+  #header {
+    width: 100vw;
+    left: 0;
+  }
+  .navbar {
+    width: 100vw;
+  }
 }
 
 @media screen and (max-width: 350px) {

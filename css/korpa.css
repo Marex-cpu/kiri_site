@@ -154,14 +154,14 @@ td {
   transition: var(--transition);
   cursor: pointer;
   border: 2px solid var(--clr-primary);
-  background: transparent;
-  color: var(--clr-primary);
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
   font-family: var(--ff-secondary);
 }
 
 .total-container .payment:hover {
-  background: var(--clr-primary);
-  color: var(--clr-secondary);
+  background: var(--clr-secondary);
+  color: var(--clr-primary);
 }
 
 .total-container .clearAll {

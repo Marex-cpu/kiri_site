@@ -73,7 +73,8 @@ Shop
   cursor: pointer;
 }
 .details .btn-add:hover {
-  background: var(--clr-grey);
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
 }
 /**** END OF SHOP ****/
 
