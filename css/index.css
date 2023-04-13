@@ -25,6 +25,7 @@
 #main-index {
   margin-top: 0;
   background: var(--clr-secondary);
+  padding: 0 12vw 0.5rem;
 }
 
 /**** 1. NAVIGATION BAR ****/
@@ -64,7 +65,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 3rem;
   padding: 2rem 5rem;
   width: 85vw;
@@ -78,11 +79,11 @@
 }
 
 .logo {
-  background: var(--clr-primary);
-  color: var(--clr-grey);
+  /* background: var(--clr-primary); */
+  color: var(--clr-primary);
   text-transform: uppercase;
   font-weight: 600;
-  padding: 1rem 2.5rem;
+  /* padding: 1rem 2.5rem; */
   letter-spacing: 0.3em;
   font-size: 2.4rem;
 }
@@ -115,9 +116,10 @@
 }
 
 .cart-btn {
-  display: flex;
+  display: none;
   border: none;
   outline: none;
+  align-self: flex-end;
   background: transparent;
   cursor: pointer;
   width: 30px;
@@ -236,6 +238,7 @@
   height: 650px;
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
   gap: 50px;
 }
 
@@ -262,6 +265,7 @@
   font-weight: 500;
   line-height: 3.6rem;
   text-align: left;
+  margin-left: 7vw;
 }
 /**** END OF DESSERT SECTION ****/
 
@@ -407,6 +411,7 @@
 /**** 9. CONTACT SECTION ****/
 .contact-section {
   /* padding-top: 11.5rem; */
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -414,11 +419,24 @@
 }
 
 .contact-mokup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
+  background: #ed9cad;
+  padding: 2.5rem;
+}
+.contact-mokup .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-secondary);
+  min-width: 350px;
+  min-height: 550px;
 }
 .contact-mokup img {
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 400px;
 }
 
 .contact-information {
@@ -448,7 +466,7 @@
 
 /**** 10. SPONSORS SECTION ****/
 .sponsors-section {
-  padding: 11.5rem 5rem 5rem;
+  padding: 11.5rem 12vw 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -503,27 +521,37 @@ footer h2 {
 }
 
 /* RESPONSIVE */
+/* large */
+@media screen and (max-width: 1400px) {
+  /* DESSERT SECTION */
+  .dessert-section .dessert-info .info {
+    margin-left: 5vw;
+  }
+}
 
 /* laptop */
 @media screen and (max-width: 1024px) {
+  #main-index {
+    padding: 0 4rem 0.5rem;
+  }
   /**** NAVIGATION BAR ****/
   .navbar {
     padding: 2rem 5rem;
   }
 
-  .nav-container {
+  /* .nav-container {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-  }
+  } */
 
   .nav-link {
     font-size: 1.6rem;
   }
 
-  .cart-btn {
+  /* .cart-btn {
     align-self: flex-start;
-  }
+  } */
   /**** END NAVIGATION BAR ****/
 
   /**** HERO SECTION ****/
@@ -553,6 +581,10 @@ footer h2 {
 
   .dessert-section .left-image img {
     object-fit: cover;
+  }
+
+  .dessert-section .dessert-info .info {
+    margin-left: 3rem;
   }
   /**** END OF DESSERT SECTION ****/
 
@@ -605,7 +637,7 @@ footer h2 {
 
   /**** SPONSORS SECTION ****/
   .sponsors-section {
-    padding-top: 13rem;
+    padding: 13rem 12vw 5rem;
   }
 
   .sponsors-section .line {
@@ -621,6 +653,10 @@ footer h2 {
 /* tablet */
 @media screen and (max-width: 768px) {
   /**** NAVIGATION BAR ****/
+  .navbar {
+    justify-content: space-between;
+  }
+
   .nav-container {
     display: none;
   }
@@ -656,6 +692,7 @@ footer h2 {
   }
 
   .cart-btn {
+    display: flex;
     align-self: center;
   }
 
@@ -730,11 +767,15 @@ footer h2 {
 
   .dessert-section .dessert-info {
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .dessert-section .dessert-info .info {
     font-size: 1.8rem;
     text-align: center;
+    margin: 0;
   }
   /**** END OF DESSERT SECTION ****/
 
@@ -865,17 +906,21 @@ footer h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #ed9cad;
   }
 
   .contact-mokup {
     width: 100%;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
+    background: #ed9cad;
+    padding: 2.5rem 0 0;
+  }
+  .contact-mokup .image {
+    min-width: 300px;
+    min-height: 500px;
   }
   .contact-mokup img {
-    width: 100%;
-    height: 500px;
+    width: 140px;
+    height: 380px;
   }
 
   .contact-information {
@@ -895,8 +940,9 @@ footer h2 {
 
   /**** SPONSORS SECTION ****/
   .sponsors-section {
-    padding-top: 10rem;
+    padding: 10rem 12vw 5rem;
   }
+
   .sponsors-section .heading {
     font-size: 3.6rem;
   }
@@ -981,22 +1027,22 @@ footer h2 {
   }
 
   .contact-mokup {
-    height: 400px;
-  }
-  .contact-mokup img {
-    width: 100%;
-    height: 400px;
+    padding: 1rem 0 0;
   }
   /**** END OF CONTACT SECTION ****/
 
   /**** SPONSORS SECTION ****/
   .sponsors-section {
-    padding-top: 11rem;
+    padding: 11rem 12vw 5rem;
   }
   /**** END OF SPONSORS SECTION ****/
 }
 
 @media screen and (max-width: 445px) {
+  #main-index {
+    padding: 0 2rem 0.5rem;
+  }
+
   /**** HERO SECTION ****/
   .hero-item {
     height: 400px;
@@ -1010,16 +1056,24 @@ footer h2 {
     object-fit: fill;
   }
   /**** END OF HERO SECTION ****/
+
+  .sponsors-section {
+    padding: 11rem 2rem 5rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
   /**** CONTACT SECTION ****/
   .contact-mokup {
-    max-height: 350px;
+    padding: 2rem 0 0;
+  }
+  .contact-mokup .image {
+    min-width: 200px;
+    min-height: 400px;
   }
   .contact-mokup img {
-    width: 100%;
-    max-height: 350px;
+    width: 110px;
+    height: 300px;
   }
   /**** END OF CONTACT SECTION ****/
 }
@@ -1027,6 +1081,9 @@ footer h2 {
 @media screen and (max-width: 365px) {
   #index {
     background: none;
+  }
+  #main-index {
+    padding: 0 0 0.5rem;
   }
   #header {
     width: 100vw;

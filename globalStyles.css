@@ -66,7 +66,7 @@ a {
 /* laptop */
 @media screen and (max-width: 1024px) {
   main {
-    margin: 132px auto 0 auto;
+    margin: 120px auto 0 auto;
   }
 }
 
