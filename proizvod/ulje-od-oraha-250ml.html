@@ -15,7 +15,7 @@
     <!-- style for navigation bar -->
     <link rel="stylesheet" href="/css/navigationBar.css" />
   </head>
-  <body>
+  <body id="productsBody">
     <!-- navigation bar -->
     <header id="header">
       <div class="custome-offer">
@@ -63,13 +63,83 @@
     </header>
     <!-- end of navigation bar -->
 
-    <main>
-      <!-- shop section -->
-      <section>Ulje od oraha 250 ml</section>
-      <!-- end of shop section -->
+    <main id="product">
+      <!-- product section -->
+      <section class="product-section">
+        <div id="single-product" class="single-product"></div>
+        <div class="commerce-tabs">
+          <div class="left-informations">
+            <h2 class="title">Informacije o proizvodu</h2>
+            <article class="informations">
+              <p>Ulje od oraha je izvor vitamina i omega 3 masnih kiselina.</p>
+              <p>
+                Najbolje upotrebiti do kraja datuma označenog na pakovanju.
+                <br />
+                Čuvati na suvom i hladnom mestu zaštićenom od izvora svetlosti.
+              </p>
+            </article>
+          </div>
+          <div class="right-tabel">
+            <table class="table-product-information">
+              <tbody>
+                <tr>
+                  <td colspan="2" width="389">
+                    <span> Hranjiva vrednost na 100 ml proizvoda </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Energija</span>
+                  </td>
+                  <td width="180">3330 kJ / 810 kcal</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Masti</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih zasićene masne kiseline</span>
+                  </td>
+                  <td width="180">
+                    <span>90 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>8,3 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Ugljeni hidrati</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>od kojih šećeri</span>
+                  </td>
+                  <td width="180">
+                    <span>&lt0,5 g</span>
+                    <p style="margin-top: 1rem"></p>
+                    <span>&lt0,5 g</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>Proteini</span>
+                  </td>
+                  <td width="180">&lt0,5 g</td>
+                </tr>
+                <tr>
+                  <td width="300">
+                    <span>So</span>
+                  </td>
+                  <td width="180">0,01 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- end of product section -->
     </main>
 
     <!-- scripts -->
     <script src="/scripts/navigationBar.js"></script>
+    <script src="/scripts/shopItemsData.js"></script>
+    <script src="/scripts/pojedinačni-proizvod/uljeOdOraha250ml.js"></script>
   </body>
 </html>
